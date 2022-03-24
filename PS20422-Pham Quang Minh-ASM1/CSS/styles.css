@@ -1,0 +1,206 @@
+html {
+    font-family: montserrat;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right top, #FF4988, #FFc781, #fffefe);
+    display: flex;
+    align-items: center;
+}
+
+
+/* css slider start */
+
+.slider {
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.slides {
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img {
+    width: 800px;
+    height: 500px;
+}
+
+
+/*css for manual slide navigation*/
+
+.navigation--manual {
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual--btn {
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual--btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual--btn:hover {
+    background: #40D3DC;
+}
+
+#radio1:checked~.first {
+    margin-left: 0;
+}
+
+#radio2:checked~.first {
+    margin-left: -20%;
+}
+
+#radio3:checked~.first {
+    margin-left: -40%;
+}
+
+#radio4:checked~.first {
+    margin-left: -60%;
+}
+
+
+/*css for automatic navigation*/
+
+.navigation--auto {
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+}
+
+.navigation--auto div {
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation--auto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked~.navigation--auto .auto--btn1 {
+    background: #40D3DC;
+}
+
+#radio2:checked~.navigation--auto .auto--btn2 {
+    background: #40D3DC;
+}
+
+#radio3:checked~.navigation--auto .auto--btn3 {
+    background: #40D3DC;
+}
+
+#radio4:checked~.navigation--auto .auto--btn4 {
+    background: #40D3DC;
+}
+
+
+/* css slider end */
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 55px 35px;
+    text-align: center;
+}
+
+.counter {
+    margin-bottom: 10px;
+}
+
+.heading {
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.form__group {
+    margin-bottom: 15px;
+}
+
+.form__input {
+    font-family: "Poppins", sans-serif;
+    color: black;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid transparent;
+    border: 1px solid #eee;
+    background-color: #eee;
+    transition: 0.25s linear;
+    width: 100%;
+}
+
+.form__input:focus {
+    border-color: #eee;
+    background-color: white;
+}
+
+.form__submit {
+    border-radius: 10px;
+    color: white;
+    padding: 15px;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    border: 0;
+    width: 100px;
+    background-color: #00aefd;
+}
+
+.btn__key {
+    background-color: #FF4988;
+    color: white;
+}
+
+#result {
+    height: 150px;
+    margin: 10px 50px 0 50px;
+    border: 1px double black;
+    border-radius: 10px;
+}
+
+#clock {
+    color: black;
+    font-family: "Poppins", sans-serif;
+    font-style: italic;
+}

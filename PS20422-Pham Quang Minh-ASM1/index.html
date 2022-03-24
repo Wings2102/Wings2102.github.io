@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS20422 | Phạm Quang Minh</title>
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;1,100;1,200&family=Roboto:ital,wght@0,300;0,500;1,400&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!--image slider start-->
+    <div class="slider">
+        <div class="slides">
+            <!--radio buttons start-->
+            <input type="radio" name="radio--btn" id="radio1">
+            <input type="radio" name="radio--btn" id="radio2">
+            <input type="radio" name="radio--btn" id="radio3">
+            <input type="radio" name="radio--btn" id="radio4">
+            <!--radio buttons end-->
+            <!--slide images start-->
+            <div class="slide first">
+                <img src="./image/1.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="./image/2.jpeg" alt="">
+            </div>
+            <div class="slide">
+                <img src="./image/3.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="./image/4.jpg" alt="">
+            </div>
+            <!--slide images end-->
+            <!--automatic navigation start-->
+            <div class="navigation--auto">
+                <div class="auto--btn1"></div>
+                <div class="auto--btn2"></div>
+                <div class="auto--btn3"></div>
+                <div class="auto--btn4"></div>
+            </div>
+            <!--automatic navigation end-->
+        </div>
+        <!--manual navigation start-->
+        <div class="navigation--manual">
+            <label for="radio1" class="manual--btn"></label>
+            <label for="radio2" class="manual--btn"></label>
+            <label for="radio3" class="manual--btn"></label>
+            <label for="radio4" class="manual--btn"></label>
+        </div>
+        <!--manual navigation end-->
+    </div>
+    <!--image slider end-->
+
+    <div class="container">
+        <h2 class="heading">Phương trình bậc 2</h2>
+        <div class="counter">
+            <span>Số lần giải: <b id="solangiai">0</b></span>
+        </div>
+        <form action="#" class="form">
+            <div class="form__group">
+                <input type="text" class="form__input" placeholder="Nhập số a" id="a">
+            </div>
+            <div class="form__group form__group">
+                <input type="text" class="form__input" placeholder="Nhập số b" id="b">
+            </div>
+            <div class="form__group">
+                <input type="text" class="form__input" placeholder="Nhập số c" id="c">
+            </div>
+            <div class="form-group">
+                <button class="form__submit btn__key" id="btnGiaiPT" onclick="ptb2.giai();dem()">
+                    Giải PT 
+                </button>
+
+                <button class="form__submit btn" id="btnChoSo" onclick="choso()">
+                    Cho số 
+                </button>
+                <div id="result"></div>
+                <p id="clock"></p>
+            </div>
+        </form>
+    </div>
+    <script src="./JS/main.js"></script>
+</body>
+
+</html>
